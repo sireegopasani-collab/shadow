@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Amazon</title>
+  <link rel="stylesheet" href="amazon.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="amazonlogo.jpg.jpeg" alt="Amazon Logo">
+  
+    </div><div  class="location">  
+    <img src="location.jpg.jpeg" alt="logo" width="10px" height="10px">
+    <small>delivery to Hyderabad 500028</small> <br>
+<h3>Update locations</h3> </div>
+    <div class="search" >
+      <select>
+        <option>All</option>
+        <option>Kids</option>
+      </select>
+      <span class="search"><img src="search.jpg.jpeg" width="30px" height="30px"></span> 
+      <input type="text" placeholder="Search Amazon.in">
+    </div>
+     <span class="flag"> <img src="flag.jpg.jpeg" width="30px" height="20px" alt="Flag"><strong><select><option>EN</option><option>TEL</option></select></strong>
+      </span>
+    <div class="list">
+    <p>Hello,sign in<br>
+        <strong>Account & Lists </strong><select><option></option></select></p>
+        </div>
+        <div class="return">
+          <p>Returns<br>
+          <strong>& orders</strong></p>
+        </div>
+      <a href="#"> <img src="cart.jpg.jpeg" width="40px" height="40px"></a>
+      <button onclick="login()" style="color:blue;background-color:white; "  ><b>Login</b></button>
+    </div>
+  </header>
+  <nav class="nav">
+    <img src="menu.jpg.jpeg" alt="menulogo" width="20px" height="20px">
+    <a href="#">All</a>
+    <a href="#">Fresh<select><option></option></select></a>
+    <a href="#">MX Player</a>
+    <a href="#">Sell</a>
+    <a href="#">Today's Deals</a>
+    <a href="#">Mobiles</a>
+    <a href="#">Customer Service</a>
+    <a href="#">Prime<select><option></option></select></a>
+    <a href="#">New Releases</a>
+    <a href="#">Amazon Pay</a>
+    <a href="#">Fashion</a>
+    <a href="#">Electronics</a>
+    <a href="#">Home & Kitchen</a>
+  </nav>
+  <div class="hello" href="arrow.html">
+  <section class="banner"><div class="g">
+    <h2>Starting ₹149 </h2> <p>Daily Needs</p> 
+  <img src="p.jpg.jpeg" alt="Promo Banner" height="50px " width="140px"></div>
+    <div class="products">
+      <span class="arrow-left " onclick="next()" style="margin-left: 2px;" > &lt</span>
+      <img id="image" src="items.jpg.jpeg"alt="himalaya" width="100%" height="100%">
+         <span class="arrow-right" onclick="prev()" style="margin-right: 2px;"> &gt</span>
+        
+         </div>
+    <script>
+        let pics=["hello.jpg.jpeg","Screenshot (34).png","Screenshot (35).png"];
+        let i=0;
+        function next() {
+i=(i+1 )% pics.length;
+document.getElementById("image").src=pics[i];
+setInterval(next,10000)
+        } 
+        
+        function prev(){
+            i=(i-1+pics.length) % pics.length;
+document.getElementById("image").src=pics[i];
+
+        } 
+    </script>
+    <script>
+       function login(){
+  window.location="h.html";
+    }
+    </script>
+      </div>
+   <div class="images">
+  </section>
+  <section class="tiles">
+    <div class="tile">
+      <h2>Revamp your home in <br>  style</h2>
+      <div class="row">
+        <div>
+          <img src="mat.jpg.jpeg" alt="Bedsheets">
+          <p>Cushion covers, bedsheets & more</p>
+        </div>
+        <div>
+          <img src="robo.jpg.jpeg" alt="Decor">
+          <p>Figurines, vases & more</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tile">
+      <h2>Bulk order discounts +<br> Up to 18% GST savings</h2>
+      <div class="row">
+        <div>
+          <img src="laptop.jpg.jpeg" alt="Laptop">
+          <p>Up to 45% off | Laptops</p>
+        </div>
+        <div>
+          <img src="water.jpg.jpeg" alt="Kitchen Appliances">
+          <p>Up to 60% off | Kitchen appliances</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tile">
+      <h2>Appliances for your<br> home | Up to 55% off</h2>
+      <div class="row">
+        <div>
+          <img src="ac.jpg.jpeg" alt="Air Conditioner">
+          <p>Air Conditioner</p>
+        </div>
+        <div>
+          <img src="fridge.jpg.jpeg" alt="Refrigerator">
+          <p>Refrigerators</p>
+        </div>
+      </div>
+    </div>
+    <div class="tile">
+  <h2> Starting ₹149<br> | Headphones</h2>
+      <div class="row">
+        <div>
+          <img src="boat.jpg.jpeg" alt="boAt">
+          <p>Starting ₹249 | boAt</p>
+        </div>
+        <div>
+          <img src="boult.jpg.jpeg" alt="Boult">
+          <p>Starting ₹349 | Boult</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>    
+</body>
+</html>

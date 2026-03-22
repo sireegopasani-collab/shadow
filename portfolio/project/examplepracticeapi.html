@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+
+        async function getData(){
+            const Data=await fetch("https://jsonplaceholder.typicode.com/users");
+            const Dataobj=await Data.json();
+            console.log("Data object",Dataobj);
+
+        }
+        getData();
+        const Hello=Dataobj.map(function (person){
+            return person.name;
+    }); 
+            
+console.log(Hello);
+    </script>
+    
+    
+</body>
+</html>
